@@ -1,0 +1,94 @@
+<?php
+ include('connect.php');
+  session_destroy();
+  header('Location:../index.php');
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js"></script>
+    <title>Cinema</title>
+</head>
+<body>
+    
+    <div class="navbar">
+        <a href="#">CINEMA &copy;</a>
+           <a href="config/admin.php">Accès staff</a>
+               </div>
+
+
+<style>
+  body{
+    background-color:black;
+    font-family:arial, sans-serif;
+    overflow:hidden;
+  }
+  h1{
+    text-align:center;
+    font-size:65px;
+    font-style:oblique;
+    font-weight: 10px;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+    animation: marque 5s linear infinite;
+    color: white;
+    
+  }
+  @keyframes marquee {
+    0%{
+      transform: translateX(100%);
+    }
+    100%{
+      transform: translateX(-100%);
+    }
+  }
+    a{
+    text-decoration: none;
+    color: white;
+    }
+    .navbar {
+    background: rgb(8, 8, 8);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px;
+    border: 5px solid rgb(217, 14, 14);
+    margin-bottom: 20px;
+  }
+  #site-name {
+    margin-right: auto;
+  }
+  .nav-right {
+    display: flex;
+    align-items: center;
+  }
+  .search-icon,
+  .dropdown-btn {
+    cursor: pointer;
+    margin-left: 10px;
+  }
+</style>
+    
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+<input type="submit" id='submit' value='LOGOUT' >
+ <div id="content">
+ 
